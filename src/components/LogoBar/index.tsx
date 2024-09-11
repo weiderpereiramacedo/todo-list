@@ -1,0 +1,18 @@
+import React from "react";
+import { BotaoLogo, BotaoMenu, Container, ContainerText } from "./styles";
+import Foundation from "@expo/vector-icons/Foundation";
+import Entypo from "@expo/vector-icons/Entypo";
+
+export function LogoBar() {
+  return (
+    <Container>
+      <BotaoLogo>
+        <Foundation name="checkbox" size={26} color="white" />
+      </BotaoLogo>
+      <ContainerText>TASKSLIST</ContainerText>
+      <BotaoMenu>
+        <Entypo name="menu" size={24} color="white" />
+      </BotaoMenu>
+    </Container>
+  );
+}
